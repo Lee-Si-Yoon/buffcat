@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buffcat</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="mainpage">
+      <h1>Buff cat.</h1>
+      <h2>scroll down</h2>
+      <p>video from (https://twitter.com/officialbuffcat)</p>
+      <i class="fas fa-chevron-down"></i>
+      <video src="./video/buffcat.mp4"></video>
+    </section>
+
+    <section class="subpage">
+
+        <form class="sub__form">
+          <h2>고양이의 체중을 입력해주세요</h2>
+          <input type="number" name="" id="weight" 
+          min="0.1" max="15.0" step=".1"
+          placeholder="ex) 1.5" required>
+          <span class="validity"></span>
+
+          <h2>고양이의 상태를 선택해주세요</h2>
+          <input type="text" name="status" id="status"
+          list="default" placeholder="눌러서 선택" required>
+          <span class="validity"></span>
+          <datalist id="default">
+            <option value="중성화 안한 성묘"></option>
+            <option value="중성화 성묘"></option>
+            <option value="활발한 성묘"></option>
+            <option value="비만 고양이"></option>
+            <option value="임신 중인 고양이"></option>
+          </datalist>
+
+          <h2>사료 kg당 kcal를 입력해주세요</h2>
+          <img src="./img/nutrition_info.jpg" alt="nutrition_info">
+          <input type="number" name="" id="food"
+          placeholder="ex) 3000 (선택사항)" min="1000" max="6000" step="1">
+          <span class="validity"></span>
+          <input type="submit" value="완료">
+        </form>
+
+    </section>
+
+    <section class="result">
+      <div class="result__container">
+        <span class="result__weight"></span>
+        <span class="result__kcal"></span>
+        <span class="result__p"></span>
+        <span class="result__food"></span>
+        <p>고양이 건강상식</p>
+        <p>1. 건식사료는 조단백질 40%, 습식사료는 조단백질 12%을 목표로 하자</p>
+        <p>2. 성묘한테 권장되는 단백질량은 1kg당 4.4g</p>
+        <p>3. 사료로 종이컵을 가득채우면 대략 80g</p>
+        <p>4. 무엇보다 중요한 것은 운동을 자주 시켜주자</p>
+      </div>
+    </section>
+
+    <!--JAVASCRIPT-->
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js"
+    integrity="sha512-UgS0SVyy/0fZ0i48Rr7gKpnP+Jio3oC7M4XaKP3BJUB/guN6Zr4BjU0Hsle0ey2HJvPLHE5YQCXTDrx27Lhe7A=="
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+    integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js"
+    integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A=="
+    crossorigin="anonymous"
+    ></script>
+    <!--<script src="https://pixijs.download/v6.0.0/pixi.min.js"></script>
+    <script src="./js/live2d.js"></script>-->
+    <script src="./js/app.js"></script>
+    <script src="./js/result.js"></script>
+  </body>
+</html>

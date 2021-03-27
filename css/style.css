@@ -1,0 +1,114 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+input{
+  border: none;
+  filter: drop-shadow(0 0 0.1rem #333);
+}
+input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+}
+/* MAINPAGE */
+.mainpage{
+  height: 100vh;
+  background-color: black;
+}
+.mainpage video{
+  height: 100%;
+  object-fit: cover;
+}
+.mainpage h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.mainpage h2{
+  position: absolute;
+  left: 50%;
+  top: 92%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 1rem;
+}
+.mainpage p{
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-weight: 200;
+  color: white;
+  font-size: .5rem;
+}
+.mainpage .fa-chevron-down{
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: 50%;
+  top: 97%;
+  transform: translate(-50%,-50%);
+}
+/* SUBPAGE */
+.subpage{
+  height: 100vh;
+  width: 100vw;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.sub__form{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sub__form h2{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.sub__form input{
+  width: 80%;
+  height: 30px;
+}
+.sub__form img{
+  width: 250px;
+}
+/* RESULT */
+.result{
+  height: 100vh;
+  display: none;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+.result__container{
+  height: 500px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.result__container span{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.result__container p{
+  line-height: 1.4;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
