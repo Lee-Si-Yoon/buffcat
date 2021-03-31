@@ -101,4 +101,4 @@ function moveToSub(){
   subpage.scrollIntoView({behavior: "smooth"});
 }
 
-window.setTimeout(moveToSub, 4000);
+window.setTimeout(moveToSub, 4500);
