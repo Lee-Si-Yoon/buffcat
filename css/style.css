@@ -1,9 +1,10 @@
 @import "./reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
 body{
   font-family: 'Noto Sans KR', sans-serif;
   overflow-x: hidden;
-  width: 100vw;
 }
 
 input{
@@ -18,23 +19,48 @@ input:valid+span:after {
   content: '✓';
   padding-left: 5px;
 }
+
 /* MAINPAGE */
 .mainpage{
   height: 100vh;
-  background-color: black;
+  width: 100vw;
 }
+/*
 .mainpage video{
   height: 100%;
   object-fit: cover;
-}
-.mainpage h1{
+}*/
+.main__title{
+  width: 90%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  color: white;
-  font-size: 2.5rem;
-  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__title h1{
+  font-family: 'Black Han Sans', sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 20px;
+  animation: colorChan 5s ease forwards;
+  line-height: 90%;
+}
+.main__title h2{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  animation: colorChan 5s ease forwards;
+}
+@keyframes colorChan {
+  0%{
+    color: white;
+  }100%{
+    color: red;
+  }
 }
 .mainpage h2{
   position: absolute;
@@ -43,14 +69,6 @@ input:valid+span:after {
   transform: translate(-50%,-50%);
   color: white;
   font-size: 1rem;
-}
-.mainpage p{
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 5px;
-  font-weight: 200;
-  color: white;
-  font-size: .5rem;
 }
 .mainpage .fa-chevron-down{
   position: absolute;
@@ -61,17 +79,26 @@ input:valid+span:after {
   top: 97%;
   transform: translate(-50%,-50%);
 }
+/*
+.mainpage p{
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-weight: 200;
+  color: white;
+  font-size: .5rem;
+}*/
 /* SUBPAGE */
 .subpage{
   height: 100vh;
   width: 100vw;
-  margin: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 } 
 .sub__form{
-  height: 500px;
+  border: 1px solid black;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -90,14 +117,13 @@ input:valid+span:after {
 /* RESULT */
 .result{
   height: 100vh;
-  display: none;
+  /*display: none;*/
   margin: 0 10px;
   justify-content: center;
   align-items: center;
 }
 .result__container{
   height: 500px;
-  display: none;
   flex-direction: column;
   justify-content: space-around;
 }

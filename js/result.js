@@ -45,10 +45,10 @@ function paintPEND(w,s,f){
 }
 
 function paintResult(){
-  const finalR = final.querySelector('.result__container');
+  const finalR = final.querySelector('.result');
   final.style.display = 'flex';
   finalR.style.display = 'flex';
-  final.scrollIntoView();
+  final.scrollIntoView({behavior: "smooth"});
 };
 
 function handleSubmit(event){
