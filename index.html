@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>buffcat</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <section class="mainpage">
@@ -18,17 +18,19 @@
     <section class="subpage">
 
         <form class="sub__form">
-          <h1>헬냥 식단</h1>
-          <h2>고양이의 체중을 입력해주세요</h2>
+          <h1>헬냥</h1>
+          <h2>식단 생성기</h2>
+          <p>buff cat's diet</p>
+          <h3>고양이의 체중을 입력해주세요</h3>
           <input type="number" name="" id="weight" 
           min="0.1" max="15.0" step=".1"
           placeholder="ex) 1.5" required>
-          <span class="validity"></span>
+          <!--<span class="validity"></span>-->
 
-          <h2>고양이의 상태를 선택해주세요</h2>
+          <h3>고양이의 상태를 선택해주세요</h3>
           <input type="text" name="status" id="status"
           list="default" placeholder="눌러서 선택" required>
-          <span class="validity"></span>
+          <!--<span class="validity"></span>-->
           <datalist id="default">
             <option value="중성화 안한 성묘"></option>
             <option value="중성화 성묘"></option>
@@ -37,18 +39,20 @@
             <option value="임신 중인 고양이"></option>
           </datalist>
 
-          <h2>사료 kg당 kcal를 입력해주세요</h2>
+          <h3>사료 kg당 kcal를 입력해주세요</h3>
           <img src="./img/nutrition_info.jpg" alt="nutrition_info">
           <input type="number" name="" id="food"
           placeholder="ex) 3000 (선택사항)" min="1000" max="6000" step="1">
-          <span class="validity"></span>
-          <input type="submit" value="완료">
+          <!--<span class="validity"></span>-->
+          <input type="submit" value="완료" class="sub__btn">
+
+          <div class="sub__links">
+            <h3>그 외 링크</h3>
+            <a href="https://lee-si-yoon.github.io/buffcat/sub1.html">헬냥 건강상식</a>
+            <a href="https://lee-si-yoon.github.io/buffcat/sub2.html">우수 헬냥 시상식</a>
+          </div>
         </form>
 
-        <div class="sub__links">
-          <a href="#">헬냥 건강상식</a>
-          <a href="#">우수 헬냥 시상식</a>
-        </div>
 
     </section>
 
@@ -59,6 +63,8 @@
         <span class="result__kcal"></span>
         <span class="result__p"></span>
         <span class="result__food"></span>
+        <p>종이컵 가득이 80g 정도</p>
+        <img src="img/cat5.gif" alt="#">
       </div>
 
     </section>

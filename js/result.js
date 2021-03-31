@@ -40,14 +40,14 @@ function paintPEND(w,s,f){
   if (f == 0){
     foodText.innerHTML = '';
   }else{
-    foodText.innerHTML = `하루 급여량: ${Number(resultFood).toFixed(1)}g / 1회분: ${Number(resultFood/3).toFixed(1)}g`;
+    foodText.innerHTML = `하루 급여량: ${Number(resultFood).toFixed(1)}g <br> 1회분: ${Number(resultFood/3).toFixed(1)}g`;
   }  
 }
 
 function paintResult(){
-  const finalR = final.querySelector('.result');
+  //const finalR = final.querySelector('.result');
   final.style.display = 'flex';
-  finalR.style.display = 'flex';
+  //finalR.style.display = 'flex';
   final.scrollIntoView({behavior: "smooth"});
 };
 

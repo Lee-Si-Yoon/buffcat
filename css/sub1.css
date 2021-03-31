@@ -1,0 +1,35 @@
+@import "./reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+
+.main{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.main__con{
+  width: 90%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: left;
+}
+.main__con__text{
+  font-family: 'Black Han Sans', sans-serif;
+  margin-bottom: 10px;
+}
+.main__con__text h1{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.main__con__text p{
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.6);
+}
+.main__con img{
+  width: 100%;
+}
